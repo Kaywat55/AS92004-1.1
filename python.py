@@ -1,22 +1,5 @@
-def inputs():
-    print("Enter all the states of the USA you can think of")
-    state_name = "  "
-    while state_name != "":
-        state_name = input("Enter a state name (press enter whyen you can't thik of any):")
-        state_list.append(state_name)
-
-def states():
-    print("These are all the states you could think of")
-    state_count = 0
-    while state_count < len(state_list):
-        print(state_list[state_count])
-        state_count += 1
-
-state_list = []
-inputs()
-states()
-print("dassdadsa")
-
-
-
-        
+name_age_list = ["Jack",14,"Jim",16,"Jason",15]
+list_count = 0
+while list_count < len(name_age_list):
+    print(f"The name is {name_age_list[list_count]} and the age is {name_age_list[list_count + 1]}")
+    list_count +=1
