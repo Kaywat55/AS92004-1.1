@@ -1,0 +1,1 @@
+activities_list_tuple = [(0,"Cultural immersion",5,"Easy",800),(1,"Kayaking & Pancakes",3,"Moderate",400),(1,"Mountain Biking",4,"Difficult",900)]
