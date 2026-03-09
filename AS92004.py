@@ -1,5 +1,10 @@
+#constants
 activities_list_tuple = [(0,"Cultural immersion",5,"Easy",800),(1,"Kayaking & Pancakes",3,"Moderate",400),(1,"Mountain Biking",4,"Difficult",900)]
+shuttle_bus_cost = 80
+
+#Lists the activitys to the user
 print("Number   Activity               Days    Difficulty     Cost")
 print(f"{activities_list_tuple[0][0]}        {activities_list_tuple[0][1]}     {activities_list_tuple[0][2]}       {activities_list_tuple[0][3]}           {activities_list_tuple[0][4]}")
 print(f"{activities_list_tuple[1][0]}        {activities_list_tuple[1][1]}    {activities_list_tuple[1][2]}       {activities_list_tuple[1][3]}       {activities_list_tuple[1][4]}")
 print(f"{activities_list_tuple[2][0]}        {activities_list_tuple[2][1]}        {activities_list_tuple[2][2]}       {activities_list_tuple[2][3]}      {activities_list_tuple[2][4]}  ")
+
