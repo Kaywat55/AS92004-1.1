@@ -8,3 +8,9 @@ print(f"{activities_list_tuple[0][0]}        {activities_list_tuple[0][1]}     {
 print(f"{activities_list_tuple[1][0]}        {activities_list_tuple[1][1]}    {activities_list_tuple[1][2]}       {activities_list_tuple[1][3]}       {activities_list_tuple[1][4]}")
 print(f"{activities_list_tuple[2][0]}        {activities_list_tuple[2][1]}        {activities_list_tuple[2][2]}       {activities_list_tuple[2][3]}      {activities_list_tuple[2][4]}  ")
 
+#Asking user for their name
+name = ""
+while len(name) == 0 or name.isdigit() == True :
+    name = input("What is your name: ")
+    if name == "" : print("You must enter your name!")
+    if name.isdigit() == True : print("You must not enter numbers!")
