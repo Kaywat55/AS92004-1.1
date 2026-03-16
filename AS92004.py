@@ -14,3 +14,12 @@ while len(name) == 0 or name.isdigit() == True :
     name = input("What is your name: ")
     if name == "" : print("You must enter your name!")
     if name.isdigit() == True : print("You must not enter numbers!")    
+
+#Asking user for their age 
+age = ""
+while len(age) == 0 or age.isdigit() == False:
+    age = (input("What is your age: "))
+    if len(age) == 0 or age.isdigit() == False : print("You must enter your age!")
+
+if int(age) < 5 or int(age) > 17:
+    print("Sorry, but you dont meet the age requrments to join")
