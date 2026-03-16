@@ -13,4 +13,4 @@ name = ""
 while len(name) == 0 or name.isdigit() == True :
     name = input("What is your name: ")
     if name == "" : print("You must enter your name!")
-    if name.isdigit() == True : print("You must not enter numbers!")
+    if name.isdigit() == True : print("You must not enter numbers!")    
