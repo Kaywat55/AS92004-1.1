@@ -26,3 +26,5 @@ while len(age) == 0 or age.isdigit() == False:
 
 if int(age) < camper_min_age or int(age) > camper_max_age:
     print("Sorry, but you dont meet the age requrments to join")
+
+
