@@ -1,6 +1,9 @@
 #constants
 activities_list_tuple = [(0,"Cultural immersion",5,"Easy",800),(1,"Kayaking & Pancakes",3,"Moderate",400),(1,"Mountain Biking",4,"Difficult",900)]
 shuttle_bus_cost = 80
+camper_max_age = 17
+camper_min_age = 5
+camper_leader_age = 15
 
 #Lists the activitys to the user
 print("Number   Activity               Days    Difficulty     Cost")
@@ -21,5 +24,5 @@ while len(age) == 0 or age.isdigit() == False:
     age = (input("What is your age: "))
     if len(age) == 0 or age.isdigit() == False : print("You must enter your age!")
 
-if int(age) < 5 or int(age) > 17:
+if int(age) < camper_min_age or int(age) > camper_max_age:
     print("Sorry, but you dont meet the age requrments to join")
