@@ -24,7 +24,16 @@ while len(age) == 0 or age.isdigit() == False:
     age = (input("What is your age: "))
     if len(age) == 0 or age.isdigit() == False : print("You must enter your age!")
 
-if int(age) < camper_min_age or int(age) > camper_max_age:
+if int(age) < camper_min_age or int(age) > camper_max_age: 
     print("Sorry, but you dont meet the age requrments to join")
+    exit()
+
+if int(age) >= camper_leader_age:
+    print("Beacause your over 15 you can be a camp leader")
+
+
+activity_selection = int(input("What number camp do you want to go on: "))
+
+
 
 
