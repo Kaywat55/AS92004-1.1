@@ -4,6 +4,7 @@ shuttle_bus_cost = 80
 camper_max_age = 17
 camper_min_age = 5
 camp_leader_age = 15
+activity_list_numbers = [0,1,2]
 
 #Lists the activitys to the user
 print("Number   Activity               Days    Difficulty     Cost")
@@ -35,9 +36,20 @@ if int(age) >= camp_leader_age:
 
 #activity selection
 activity_selection = ""
-while len(activity_selection) == 0 or activity_selection.isdigit() == False:
-    activity_selection = input("What number camp do you want to go on: "))
-    if
+while activity_selection not in activity_list_numbers:
+    activity_selection = input("What number camp do you want to go on: ") 
+    if activity_selection not in activity_list_numbers: print("Enter 0-2 only")
+
+
+
+
+
+
+
+
+
+
+
 
 
 
