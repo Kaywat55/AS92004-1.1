@@ -4,7 +4,7 @@ shuttle_bus_cost = 80
 camper_max_age = 17
 camper_min_age = 5
 camp_leader_age = 15
-activity_list_numbers = [0,1,2]
+
 
 #Lists the activitys to the user
 print("Number   Activity               Days    Difficulty     Cost")
@@ -34,11 +34,14 @@ if int(age) < camper_min_age or int(age) > camper_max_age:
 if int(age) >= camp_leader_age:
     print("Beacause your over 15 you can be a camp leader")
 
-#activity selection
+#activity selection 
 activity_selection = ""
-while activity_selection not in activity_list_numbers:
+while activity_selection == "" or activity_selection.isdigit() == False:
     activity_selection = input("What number camp do you want to go on: ") 
-    if activity_selection not in activity_list_numbers: print("Enter 0-2 only")
+    if activity_selection == "": print("You must enter something!")
+    if activity_selection.isdigit() == False: print("You must enter a number!")
+    if activity_selection.isdigit() == True :
+          if int(activity_selection) > len(activities_list_tuple) : print("You must enter a vaild camp number!")
 
 
 
