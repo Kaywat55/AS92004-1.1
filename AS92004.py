@@ -4,6 +4,8 @@ shuttle_bus_cost = 80
 camper_max_age = 17
 camper_min_age = 5
 camp_leader_age = 15
+meal_options = ["standard","vegeterian","vegan"]
+
 
 
 #Lists the activitys to the user
@@ -32,7 +34,7 @@ if int(age) < camper_min_age or int(age) > camper_max_age:
 
 #seeing if the user can be a camp leader
 if int(age) >= camp_leader_age:
-    print("Beacause your over 15 you can be a camp leader")
+    print("Beacause your 15+ you can be a camp leader")
 
 #activity selection 
 activity_selection = ""
@@ -42,6 +44,15 @@ while activity_selection == "" or activity_selection.isdigit() == False:
     if activity_selection.isdigit() == False: print("You must enter a number!")
     if activity_selection.isdigit() == True :
           if int(activity_selection) > len(activities_list_tuple) : print("You must enter a vaild camp number!")
+
+#Asking for type of meal
+meal_input = ""
+while meal_input == "" or meal_input.isdigit() == True or meal_input not in meal_options:
+    meal_input = input(f"What meal do you want: standard, vegeterian, vegan: ").lower()
+    if meal_input == "": print("You must enter something!")
+    if meal_input.isdigit() == True: print("You must not enter a number!")
+    if meal_input != "" and meal_input.isdigit() == False:
+        if meal_input not in meal_options: print("That is not a valid meal")
 
 
 
