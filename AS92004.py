@@ -36,16 +36,16 @@ if int(age) < camper_min_age or int(age) > camper_max_age:
 if int(age) >= camp_leader_age:
     print("Beacause your 15+ you can be a camp leader")
     camp_leader_option = ""
-    while camp_leader_option == "" or camp_leader_option.isdigit() == True or camp_leader_option != 'yes' or camp_leader_option != 'no':
+    while camp_leader_option == "" or camp_leader_option.isdigit() == True or camp_leader_option != "yes" or camp_leader_option != "no":
         camp_leader_option = input("Do you want to be a camp leader: ").lower()
         if camp_leader_option == "": print("You must not leave it blank!")
         if camp_leader_option.isdigit() == True: print("You must not enter numbers!")
         if camp_leader_option != "" and camp_leader_option.isdigit() == False:
-            if camp_leader_option == 'yes':
-                camp_leader_wanted = 'yes'
+            if camp_leader_option == "yes":
+                camp_leader_wanted = "yes"
                 break
-            if camp_leader_option == 'no':
-                camp_leader_wanted = 'no'
+            if camp_leader_option == "no":
+                camp_leader_wanted = "no"
                 break
         
 #activity selection 
@@ -68,20 +68,21 @@ while meal_input == "" or meal_input.isdigit() == True or meal_input not in meal
 
 # Asking for Suttle bus option 
 shuttle_bus_option = ""
-while shuttle_bus_option == "" or shuttle_bus_option.isdigit() == True or shuttle_bus_option != 'yes' or shuttle_bus_option != 'no':
+while shuttle_bus_option == "" or shuttle_bus_option.isdigit() == True or shuttle_bus_option != "yes" or shuttle_bus_option != "no":
     shuttle_bus_option = input("Do you want the shuttle bus (80$) ").lower()
     if shuttle_bus_option == "": print("You must not leave it blank!")
     if shuttle_bus_option.isdigit() == True: print("You must not enter numbers!")
     if shuttle_bus_option != "" and shuttle_bus_option.isdigit() == False:
-        if shuttle_bus_option == 'yes':
-            shuttle_bus_needed = 'yes'
+        if shuttle_bus_option == "yes":
+            shuttle_bus_needed = "do"
             break
-        if shuttle_bus_option == 'no':
-            shuttle_bus_needed = 'no'
+        if shuttle_bus_option == "no":
+            shuttle_bus_needed = "don't"
             break
 
 #Listing everything back to user
-print(f"Hello {name} you are {age}. You are going to the {activities_list_tuple[int(activity_selection)][1]} camp,)
+print(f"Hello {name} you are {age}. You are going to the {activities_list_tuple[int(activity_selection)][1]} camp, \
+    witch is {activities_list_tuple[int(activity_selection)][3]}. Your meal is {meal_input}. You {shuttle_bus_needed} need the shuttl)
 
 
 
