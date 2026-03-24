@@ -80,6 +80,9 @@ while shuttle_bus_option == "" or shuttle_bus_option.isdigit() == True or shuttl
             shuttle_bus_needed = 'no'
             break
 
+#Listing everything back to user
+print(f"Hello {name} you are {age}. You are going to the {activities_list_tuple[int(activity_selection)][1]} camp,)
+
 
 
 
