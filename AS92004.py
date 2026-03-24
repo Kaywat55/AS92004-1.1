@@ -54,6 +54,12 @@ while meal_input == "" or meal_input.isdigit() == True or meal_input not in meal
     if meal_input != "" and meal_input.isdigit() == False:
         if meal_input not in meal_options: print("That is not a valid meal")
 
+# Asking for Suttle bus option 
+shuttle_bus_option = ""
+while shuttle_bus_option == "" or shuttle_bus_option.isdigit() == True or shuttle_bus_option != 'yes' or shuttle_bus_option != 'no':
+    shuttle_bus_option = input("Do you want the shuttle bus (80$) ").lower()
+    if shuttle_bus_option == "": print("You must not leave it blank!")
+    if shuttle_bus_option.isdigit() == True: print("You must not enter numbers!") 
 
 
 
