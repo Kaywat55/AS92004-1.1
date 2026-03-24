@@ -59,7 +59,13 @@ shuttle_bus_option = ""
 while shuttle_bus_option == "" or shuttle_bus_option.isdigit() == True or shuttle_bus_option != 'yes' or shuttle_bus_option != 'no':
     shuttle_bus_option = input("Do you want the shuttle bus (80$) ").lower()
     if shuttle_bus_option == "": print("You must not leave it blank!")
-    if shuttle_bus_option.isdigit() == True: print("You must not enter numbers!") 
+    if shuttle_bus_option.isdigit() == True: print("You must not enter numbers!")
+    if shuttle_bus_option != "" and shuttle_bus_option.isdigit() == False:
+        if shuttle_bus_option == 'yes':
+            shuttle_bus_needed = True
+        if shuttle_bus_option == 'false':
+            shuttle_bus_needed = False
+ 
 
 
 
