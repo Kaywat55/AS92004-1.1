@@ -35,6 +35,12 @@ if int(age) < camper_min_age or int(age) > camper_max_age:
 #seeing if the user can be a camp leader
 if int(age) >= camp_leader_age:
     print("Beacause your 15+ you can be a camp leader")
+    camp_leader_option = ""
+    while camp_leader_option == "" or camp_leader_option.isdigit() == True or camp_leader_option != 'yes' or camp_leader_option != 'no':
+        camp_leader_option = input("Do you want to be a camp leader: ").lower()
+        if camp_leader_option == "": print("You must not leave it blank!")
+        if camp_leader_option.isdigit() == True: print("You must not enter numbers!")
+        
 
 #activity selection 
 activity_selection = ""
