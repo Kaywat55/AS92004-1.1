@@ -40,8 +40,14 @@ if int(age) >= camp_leader_age:
         camp_leader_option = input("Do you want to be a camp leader: ").lower()
         if camp_leader_option == "": print("You must not leave it blank!")
         if camp_leader_option.isdigit() == True: print("You must not enter numbers!")
+        if camp_leader_option != "" and camp_leader_option.isdigit() == False:
+            if camp_leader_option == 'yes':
+                camp_leader_wanted = 'yes'
+                break
+            if camp_leader_option == 'no':
+                camp_leader_wanted = 'no'
+                break
         
-
 #activity selection 
 activity_selection = ""
 while activity_selection == "" or activity_selection.isdigit() == False:
