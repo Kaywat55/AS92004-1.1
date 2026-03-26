@@ -82,7 +82,7 @@ while shuttle_bus_option == "" or shuttle_bus_option.isdigit() == True or shuttl
 
 #Listing everything back to user
 print(f"Hello {name} you are {age}. You are going to the {activities_list_tuple[int(activity_selection)][1]} camp, \
-    witch is {activities_list_tuple[int(activity_selection)][3]}. Your meal is {meal_input}. You {shuttle_bus_needed} need the shuttl)
+    witch is {activities_list_tuple[int(activity_selection)][3]}. Your meal is {meal_input}. You {shuttle_bus_needed} need the shuttle bus")
 
 
 
