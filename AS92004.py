@@ -82,7 +82,13 @@ while shuttle_bus_option == "" or shuttle_bus_option.isdigit() == True or shuttl
 
 #Listing everything back to user
 print(f"Hello {name} you are {age}. You are going to the {activities_list_tuple[int(activity_selection)][1]} camp, \
-which is {activities_list_tuple[int(activity_selection)][3]}. Your meal is {meal_input}. You {shuttle_bus_needed} need the shuttle bus")
+which is {activities_list_tuple[int(activity_selection)][3]}. Your meal is {meal_input}. You {shuttle_bus_needed} need the shuttle bus.")
+
+#Camp total cost 
+if shuttle_bus_needed == "do":
+    camp_cost = {activities_list_tuple[int(activity_selection)[4]]} + shuttle_bus_needed
+if shuttle_bus_needed == "don't":
+    camp_cost = {activities_list_tuple[int(activity_selection)[4]]}
 
 
 
