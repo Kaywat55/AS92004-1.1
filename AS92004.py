@@ -42,10 +42,10 @@ if int(age) >= camp_leader_age:
         if camp_leader_option.isdigit() == True: print("You must not enter numbers!")
         if camp_leader_option != "" and camp_leader_option.isdigit() == False:
             if camp_leader_option == "yes":
-                camp_leader_wanted = "yes"
+                camp_leader_wanted = "do"
                 break
             if camp_leader_option == "no":
-                camp_leader_wanted = "no"
+                camp_leader_wanted = "don't"
                 break
         
 #activity selection 
@@ -82,7 +82,7 @@ while shuttle_bus_option == "" or shuttle_bus_option.isdigit() == True or shuttl
 
 #Listing everything back to user
 print(f"Hello {name} you are {age}. You are going to the {activities_list_tuple[int(activity_selection)][1]} camp, \
-    witch is {activities_list_tuple[int(activity_selection)][3]}. Your meal is {meal_input}. You {shuttle_bus_needed} need the shuttle bus")
+which is {activities_list_tuple[int(activity_selection)][3]}. Your meal is {meal_input}. You {shuttle_bus_needed} need the shuttle bus")
 
 
 
