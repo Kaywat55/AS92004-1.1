@@ -90,25 +90,8 @@ if shuttle_bus_needed == "do":
 if shuttle_bus_needed == "don't":
     camp_cost = {activities_list_tuple[int(activity_selection)[4]]}
 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#confirmation for camp 
+confirmation = ""
+while confirmation == "" or confirmation.isdigit() == True or shuttle_bus_option != "yes" or confirmation != "no":
+    confirmation = input(f"Plese comfirm your stay with a price of {camp_cost} ")
+    
