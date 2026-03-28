@@ -92,6 +92,12 @@ if shuttle_bus_needed == "don't":
 
 #confirmation for camp 
 confirmation = ""
-while confirmation == "" or confirmation.isdigit() == True or shuttle_bus_option != "yes" or confirmation != "no":
-    confirmation = input(f"Plese comfirm your stay with a price of {camp_cost} ")
-    
+while confirmation == "" or confirmation.isdigit() == True or confirmation != "yes" or confirmation != "no":
+    confirmation = input(f"Plese comfirm your stay with a price of {camp_cost} ").lower()
+    if confirmation == "": print("You must not leave it blank!")
+    if confirmation.isdigit() == True: print("You must not enter numbers!")
+    if confirmation != "" and confirmation.isdigit() == False:
+        if confirmation == "yes":
+            print("Enjoy your stay")
+        if confirmation == "no":
+            print("Bye")
