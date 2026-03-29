@@ -86,9 +86,9 @@ which is {activities_list_tuple[int(activity_selection)][3]}. Your meal is {meal
 
 #Camp total cost 
 if shuttle_bus_needed == "do":
-    camp_cost = {activities_list_tuple[int(activity_selection)[4]]} + shuttle_bus_needed
+    camp_cost = {activities_list_tuple[int(activity_selection)][4]} + shuttle_bus_needed
 if shuttle_bus_needed == "don't":
-    camp_cost = {activities_list_tuple[int(activity_selection)[4]]}
+    camp_cost = {activities_list_tuple[int(activity_selection)][4]}
 
 #confirmation for camp 
 confirmation = ""
@@ -99,5 +99,7 @@ while confirmation == "" or confirmation.isdigit() == True or confirmation != "y
     if confirmation != "" and confirmation.isdigit() == False:
         if confirmation == "yes":
             print("Enjoy your stay")
+            break
         if confirmation == "no":
             print("Bye")
+            break
