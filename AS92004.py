@@ -17,7 +17,7 @@ name = ""
 while len(name) == 0 or name.isalpha() == False :
     name = input("What is your name: ").title().strip()
     if name == "" : print("You must enter your name!")
-    if name.isalpha() == False : print("You must not enter numbers!")    
+    elif name.isalpha() == False : print("You must not enter something!")    
 
 #Asking user for their age and checks if valid.
 age = ""
