@@ -40,6 +40,7 @@ if int(age) >= camp_leader_age:
         camp_leader_option = input("Do you want to be a camp leader: ").lower().strip()
         if camp_leader_option == "": print("You must not leave it blank!")
         if camp_leader_option.isdigit() == True: print("You must not enter numbers!")
+        if camp_leader_option != "yes" and camp_leader_option != "no" : print("You must only enter yes or no!")
         if camp_leader_option != "" and camp_leader_option.isdigit() == False:
             if camp_leader_option == "yes":
                 camp_leader_wanted = "do"
@@ -53,7 +54,7 @@ activity_selection = ""
 while activity_selection == "" or activity_selection.isdigit() == False:
     activity_selection = input("What number camp do you want to go on: ").strip()
     if activity_selection == "": print("You must enter something!")
-    if activity_selection.isdigit() == False: print("You must enter a number!")
+    if activity_selection.isdigit() == False: print("You must enter a valid number!")
     if activity_selection.isdigit() == True :
           if int(activity_selection) > len(activities_list_tuple) : print("You must enter a vaild camp number!")
 
@@ -72,6 +73,7 @@ while shuttle_bus_option == "" or shuttle_bus_option.isdigit() == True or shuttl
     shuttle_bus_option = input("Do you want the shuttle bus (80$) ").lower().strip()
     if shuttle_bus_option == "": print("You must not leave it blank!")
     if shuttle_bus_option.isdigit() == True: print("You must not enter numbers!")
+    if shuttle_bus_option != "yes" and shuttle_bus_option != "no": print("You must only enter yes or no!")
     if shuttle_bus_option != "" and shuttle_bus_option.isdigit() == False:
         if shuttle_bus_option == "yes":
             shuttle_bus_needed = "do"
@@ -94,9 +96,10 @@ if shuttle_bus_needed == "don't":
 #confirmation for camp and checks if vaild.
 confirmation = ""  
 while confirmation == "" or confirmation.isdigit() == True or confirmation != "yes" or confirmation != "no":
-    confirmation = input(f"Plese comfirm your stay with a price of {camp_cost} ").lower().strip()
+    confirmation = input(f"Plese comfirm your stay with a price of ${camp_cost} ").lower().strip()
     if confirmation == "": print("You must not leave it blank!")
     if confirmation.isdigit() == True: print("You must not enter numbers!")
+    if confirmation != "yes" and confirmation != "no" : print("You must only yes or no")
     if confirmation != "" and confirmation.isdigit() == False:
         if confirmation == "yes":
             print("Enjoy your stay")
